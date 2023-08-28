@@ -2,6 +2,7 @@
 dhcp
 
 # Required for TLS cert verification
-ntp pool.ntp.org
+ntp ie.pool.ntp.org
 
-chain https://raw.githubusercontent.com/valtzu/pipxe/master/example/boot.ipxe
+chain https://www.k8.kasil.cloud/net_install/boot.ipxe
+

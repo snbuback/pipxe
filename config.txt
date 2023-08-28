@@ -1,6 +1,6 @@
 arm_64bit=1
 armstub=RPI_EFI.fd
-boot_delay=0
+boot_delay=1
 disable_splash=1
 enable_uart=1
 uart_2ndstage=1
@@ -12,3 +12,11 @@ device_tree_end=0x200000
 dtoverlay=disable-bt
 dtoverlay=upstream-pi4
 arm_boost=1
+
+gpu_mem=512
+dtoverlay=gpio-fan,gpiopin=14,temp=80000
+dtparam=poe_fan_temp0=60000
+dtparam=poe_fan_temp1=65000
+dtparam=poe_fan_temp2=70000
+dtparam=poe_fan_temp3=80000
+
